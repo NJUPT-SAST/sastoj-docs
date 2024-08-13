@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
+import markdownItTaskCheckbox from 'markdown-it-task-checkbox';
 
-export default defineConfig({
+export default withMermaid({
   title: "SASTOJ",
   description: "Microservice Online Judge",
   head: [
@@ -28,26 +30,52 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
-          { text: '用户指南', link: '/user-guide/api-examples' },
-          { text: '开发指南', link: '/dev-guide/markdown-examples' },
+          { text: '用户指南', link: '/user-guide' },
+          { text: '开发指南', link: '/dev-guide' },
         ],
         sidebar: {
           '/user-guide/': {
             text: '用户指南',
+            base: '/user-guide',
             items: [
               {
-                text: 'API 示例',
-                link: '/user-guide/api-examples'
+                text: '简介',
+                link: '/'
               },
             ]
           },
           '/dev-guide/': {
             text: '开发指南',
+            base: '/dev-guide',
             items: [
               {
-                text: 'Markdown 示例',
-                link: '/dev-guide/markdown-examples'
+                text: '简介',
+                link: '/'
               },
+              {
+                text: '后端',
+                base: '/dev-guide/backend',
+                items: [
+                  {
+                    text: '处理条件和自测',
+                    link: '/Process-of-Submission-&-SelfTest'
+                  },
+                  {
+                    text: '网关',
+                    base: '/dev-guide/backend/gateway',
+                    items: [
+                      {
+                        text: '简介',
+                        link: '/'
+                      },
+                      {
+                        text: '同步缓存',
+                        link: '/sync-cache'
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         }
@@ -60,10 +88,22 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'User Guide', link: '/user-guide/api-examples' },
-          { text: 'Dev Guide', link: '/dev-guide/markdown-examples' },
+          { text: 'User Guide', link: '/user-guide' },
+          { text: 'Dev Guide', link: '/dev-guide' },
         ],
       }
+    }
+  },
+  markdown: {
+    config: (md) => {
+      md.use(markdownItTaskCheckbox, {
+        disabled: true,
+        divWrap: false,
+        divClass: 'checkbox',
+        idPrefix: 'cbx_',
+        ulClass: 'task-list',
+        liClass: 'task-list-item'
+      });
     }
   },
 })

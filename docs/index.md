@@ -17,7 +17,7 @@ features:
   - title: 简单部署
     icon: 🐳
     details: 支持包括Docker-compose、二进制和源码部署在多个平台上。
-  - title: 语言支持
+  - title: 多语言支持
     icon: 🛠️
     details: 支持大多数流行的编程语言，如C、C++、Java、Python等。并且还允许自定义语言。
   - title: 高并发

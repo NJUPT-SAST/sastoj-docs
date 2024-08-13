@@ -17,7 +17,7 @@ features:
   - title: Easy Deployments
     icon: 🐳
     details: Support Docker-compose, binary, and source code deployments on multiple platforms.
-  - title: Languages Support
+  - title: Multi-Languages Support
     icon: 🛠️
     details: Support most of the popular programming languages like C, C++, Java, Python, etc. And also allow custom languages.
   - title: High Concurrency
