@@ -48,7 +48,7 @@ Key: `submission:{userID}:{UUID}`
 
 Value: `{submission}`
 
-## Status
+## 提交状态
 
 SASTOJ 的评测状态有以下几种：
 

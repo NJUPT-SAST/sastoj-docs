@@ -65,7 +65,7 @@ export default withMermaid({
                     base: '/dev-guide/backend/gateway',
                     items: [
                       {
-                        text: '简介',
+                        text: '网关开发',
                         link: '/'
                       },
                       {
