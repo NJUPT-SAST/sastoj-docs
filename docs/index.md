@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /dev-guide/markdown-examples
+      link: /dev-guide
     - theme: alt
       text: 开发指南
-      link: /user-guide/api-examples
+      link: /user-guide
 
 features:
   - title: 简单部署
