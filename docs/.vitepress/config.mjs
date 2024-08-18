@@ -71,6 +71,16 @@ export default withMermaid({
                     ]
                   },
                   {
+                    text: '网络中间件',
+                    base: '/dev-guide/backend/net-mid',
+                    items: [
+                      {
+                        text: '认证',
+                        link: '/auth'
+                      },
+                    ]
+                  },
+                  {
                     text: '评测中间件',
                     base: '/dev-guide/backend/judge-mid',
                     items: [
