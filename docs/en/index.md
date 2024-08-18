@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /dev-guide
+      link: /user-guide
     - theme: alt
       text: Dev Guide
-      link: /user-guide
+      link: /dev-guide
 
 features:
   - title: Easy Deployments

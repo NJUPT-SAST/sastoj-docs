@@ -1,4 +1,4 @@
-# 处理提交和自测
+# 提交和自测
 
 提交和自测是 SASTOJ 中最重要的部分之一。
 
@@ -44,9 +44,13 @@ deactivate User
 
 ## Redis 存储
 
+我们会将提交存入 Redis，以便于 `user` 端可以通过 `UUID` 获取到提交结果。
+
 Key: `submission:{userID}:{UUID}`
 
 Value: `{submission}`
+
+其中 `submission` 是 `pkg/mq` 中定义的 `Submission` 结构体。当然，这个结构体会被序列化为 JSON 字符串，所以开发者也可以定义自己的结构体，只需要能够兼容原结构体即可，当然，直接使用原结构体会是更好的选择。
 
 ## 提交状态
 

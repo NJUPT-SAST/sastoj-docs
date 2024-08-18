@@ -52,7 +52,7 @@ flowchart LR
 ```
 
 - [x] 适配IOI赛制
-- [ ] 实时排行榜
+- [x] 实时排行榜
 - [ ] 系统监控
 - [ ] 交互/special judge
 

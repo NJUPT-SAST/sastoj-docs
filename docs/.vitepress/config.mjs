@@ -57,8 +57,32 @@ export default withMermaid({
                 base: '/dev-guide/backend',
                 items: [
                   {
-                    text: '处理条件和自测',
-                    link: '/Process-of-Submission-&-SelfTest'
+                    text: '简介',
+                    base: '/dev-guide/backend/intro',
+                    items: [
+                      {
+                        text: '项目结构',
+                        link: '/layout'
+                      },
+                      {
+                        text: '快速开始',
+                        link: '/quick-start'
+                      }
+                    ]
+                  },
+                  {
+                    text: '评测中间件',
+                    base: '/dev-guide/backend/judge-mid',
+                    items: [
+                      {
+                        text: '概览',
+                        link: '/'
+                      },
+                      {
+                        text: '提交和自测',
+                        link: '/submission-&-self-test'
+                      },
+                    ]
                   },
                   {
                     text: '网关',
