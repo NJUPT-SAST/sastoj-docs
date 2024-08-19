@@ -46,7 +46,7 @@ sastoj 使用的缓存是 [Redis](https://redis.io/)，您需要安装好对应�
 
 ### RabbitMQ
 
-sastoj 使用的消息队列是 [RabbitMQ](https://www.rabbitmq.com/)，您需要安装好对应的消息队列，并且配置好对应的地址，默认为 `localhost:5672`，默认用户名和均为 `sastoj`。
+sastoj 使用的消息队列是 [RabbitMQ](https://www.rabbitmq.com/)，您需要安装好对应的消息队列，并且配置好对应的地址，默认为 `localhost:5672`，默认密码均为 `sastoj`。
 
 ## 项目启动
 

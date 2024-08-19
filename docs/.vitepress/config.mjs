@@ -78,6 +78,10 @@ export default withMermaid({
                         text: '认证',
                         link: '/auth'
                       },
+                      {
+                        text: 'API 限流器',
+                        link: '/api-limiter'
+                      }
                     ]
                   },
                   {
@@ -92,6 +96,10 @@ export default withMermaid({
                         text: '提交和自测',
                         link: '/submission-&-self-test'
                       },
+                      {
+                        text: 'Go-judge 中间件',
+                        link: '/gojudge-mid'
+                      }
                     ]
                   },
                   {
