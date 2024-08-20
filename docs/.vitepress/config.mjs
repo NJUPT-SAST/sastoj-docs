@@ -120,6 +120,10 @@ export default withMermaid({
               }
             ]
           }
+        },
+        footer: {
+          message: '基于 Apache-2.0 许可发布',
+          copyright: '版权所有 © 2024 南京邮电大学大学生科学技术协会'
         }
       }
     },
@@ -133,6 +137,10 @@ export default withMermaid({
           { text: 'User Guide', link: '/user-guide' },
           { text: 'Dev Guide', link: '/dev-guide' },
         ],
+        footer: {
+          message: 'Released under Apache-2.0 License',
+          copyright: 'Copyright © 2024 Nanjing University of Posts and Telecommunications Students\' Association for Science and Technology'
+        }
       }
     }
   },
