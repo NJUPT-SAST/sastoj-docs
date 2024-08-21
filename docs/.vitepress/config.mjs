@@ -19,6 +19,10 @@ export default withMermaid({
 
     lastUpdated: true,
 
+    outline: {
+      level: [2, 4],
+    },
+
     search: {
       provider: 'local'
     }
@@ -67,6 +71,10 @@ export default withMermaid({
                       {
                         text: '快速开始',
                         link: '/quick-start'
+                      },
+                      {
+                        text: '题目类型',
+                        link: '/problem-types'
                       }
                     ]
                   },
