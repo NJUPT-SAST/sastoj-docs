@@ -11,6 +11,11 @@
     "lint:md": "markdownlint 'docs/**/*.{md,mdx}' --fix"
   },
   "dependencies": {
+    "@braintree/sanitize-url": "^7.1.0",
+    "cytoscape": "^3.30.2",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "debug": "^4.3.6",
     "markdown-it-task-checkbox": "^1.0.6"
   }
 }
