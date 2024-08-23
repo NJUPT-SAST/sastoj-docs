@@ -46,6 +46,30 @@ export default withMermaid({
                 text: '简介',
                 link: '/'
               },
+              {
+                text: '管理端指南',
+                base: '/user-guide/admin-console',
+                items: [
+                  {
+                    text: '简介',
+                    link: '/'
+                  },
+                  {
+                    text: '评测',
+                    base: '/user-guide/admin-console/judge',
+                    items: [
+                      {
+                        text: '配置文件',
+                        link: '/config'  
+                      },
+                      {
+                        text: '测试用例',
+                        link: '/testdata'
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           },
           '/dev-guide/': {
