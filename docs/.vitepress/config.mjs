@@ -52,7 +52,13 @@ export default withMermaid({
                 items: [
                   {
                     text: '简介',
-                    link: '/'
+                    link: '/',
+                    items: [
+                      {
+                        text: '快速开始',
+                        link: '/quick-start'
+                      }
+                    ]
                   },
                   {
                     text: '评测',
@@ -60,7 +66,7 @@ export default withMermaid({
                     items: [
                       {
                         text: '配置文件',
-                        link: '/config'  
+                        link: '/config'
                       },
                       {
                         text: '测试用例',
