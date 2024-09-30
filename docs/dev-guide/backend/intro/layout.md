@@ -11,15 +11,11 @@
 ├── api
 ├── app
 │   ├── admin
-│   │   ├── case
-│   │   ├── contest
-│   │   ├── group
-│   │   ├── judge
-│   │   ├── judger
-│   │   ├── problem
-│   │   └── user
-│   ├── gojudge
-│   ├── rsjudge
+│   │   └── admin
+│   ├── gojudge (deprecated)
+│   ├── judge
+│   │   └── gojudge
+│   ├── rsjudge (future)
 │   ├── public
 │   │   └── auth
 │   └── user

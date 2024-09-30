@@ -28,7 +28,8 @@
 
 - `name_slug` 为题型内部名称（用于管理端）
 - `display_name` 为题型名称（用于用户端）
-- `channel_name` 为这种题型所使用的消息队列的 `Channel` 的名字
+- `submission_channel_name` 为这种题型所提交使用的消息队列的 `Channel` 的名字
+- `self_test_channel_name` 为这种题型所自测使用的消息队列的 `Channel` 的名字
 
 同时，需要将信息缓存到 `Redis` 中，`Key` 为 `problemType:{name_slug}`，`Value` 为 `Channel` 的名字。
 
