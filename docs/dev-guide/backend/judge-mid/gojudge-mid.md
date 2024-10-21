@@ -8,7 +8,30 @@
 
 sastoj 通过 Go-judge 中间件提供了对 [`Go-judge`](https://github.com/criyle/go-judge) 评测机的支持。
 
-Go-judge 中间件是搭建了 sastoj 和 Go-judge 服务直接的桥梁，将 sastoj 的提交和自测发送到 Go-judge 服务，通过分析 Go-judge 的回传对提交进行评分，并持久化数据。
+Go-judge 中间件是搭建了 sastoj 和 Go-judge 服务直接的桥梁，将 sastoj 的提交和自测发送到 Go-judge 服务，通过分析 Go-judge
+的回传对提交进行评分，并持久化数据。
+
+## 题目类型
+
+该评测机支持的题目类型为编程题。对应的题目类型信息如下：
+
+``` json
+// 编程题
+{
+    // 题目类型的简化名称
+    "slug_name": "gojudge-classic-algo",
+    // 显示名
+    "display_name": "Classic-Algo",
+    // 题目类型描述
+    "description": "Classic Algo Problem powered by Gojudge",
+    // 在消息队列中的提交通道名称
+    "submission_channel_name": "gojudge-submission",
+    // 在消息队列中的自测通道名称
+    "self_test_channel_name": "gojudge-self-test",
+    // 评测机名称
+    "judge": "gojudge"
+}
+```
 
 ## 代码结构
 
@@ -115,7 +138,7 @@ message ExecConfig{
 1. 监听消息队列，接收提交消息。
 2. 从消息中提取提交信息，包括提交 ID、题目 ID、语言、代码等。
 3. 通过题目 ID 获取题目信息，包括题目的测试数据。
-4. 根据题目类型（simple, subtasks）不同，调用不同的评测函数。
+4. 根据评测类型（simple, subtasks）不同，调用不同的评测函数。
 5. 从配置文件中获取对应语言的编译、运行、源文件、目标文件等信息。
 6. 编译代码，运行代码，获取运行结果。
 7. 根据运行结果，对提交进行评分。
