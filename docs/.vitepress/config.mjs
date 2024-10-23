@@ -137,6 +137,10 @@ export default withMermaid({
                       {
                         text: 'Go-judge 中间件',
                         link: '/gojudge-mid'
+                      },
+                      {
+                        text: 'FreshCup 中间件',
+                        link: '/freshcup-mid'
                       }
                     ]
                   },
