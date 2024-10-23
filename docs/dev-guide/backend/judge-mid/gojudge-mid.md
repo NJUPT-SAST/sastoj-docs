@@ -15,23 +15,9 @@ Go-judge 中间件是搭建了 sastoj 和 Go-judge 服务直接的桥梁，将 s
 
 该评测机支持的题目类型为编程题。对应的题目类型信息如下：
 
-``` json
-// 编程题
-{
-    // 题目类型的简化名称
-    "slug_name": "gojudge-classic-algo",
-    // 显示名
-    "display_name": "Classic-Algo",
-    // 题目类型描述
-    "description": "Classic Algo Problem powered by Gojudge",
-    // 在消息队列中的提交通道名称
-    "submission_channel_name": "gojudge-submission",
-    // 在消息队列中的自测通道名称
-    "self_test_channel_name": "gojudge-self-test",
-    // 评测机名称
-    "judge": "gojudge"
-}
-```
+| 题目类型 |      Slug Name       | Display Name |               Description               | Submission Channel Name | Self Test Channel Name |  Judge  |
+|:----:|:--------------------:|:------------:|:---------------------------------------:|:-----------------------:|:----------------------:|:-------:|
+| 编程题  | gojudge-classic-algo | Classic-Algo | Classic Algo Problem powered by Gojudge |   gojudge-submission    |   gojudge-self-test    | gojudge |
 
 ## 代码结构
 

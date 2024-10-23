@@ -8,41 +8,11 @@ sastoj 通过 FreshCup 中间件提供了对 `单选题、多选题、简答题`
 
 该评测机支持的题目类型为选择题、填空题。对应的题目类型信息如下：
 
-``` json
-// 单选题
-{
-    // 题目类型的简化名称
-    "slug_name": "freshcup-single-choice",
-    // 显示名
-    "display_name": "Single-Choice",
-    // 题目类型描述
-    "description": "Single Choice Problem powered by Freshcup",
-    // 在消息队列中的提交通道名称
-    "submission_channel_name": "freshcup-submission",
-    // 在消息队列中的自测通道名称
-    "self_test_channel_name": "freshcup-self-test",
-    // 评测机名称
-    "judge": "freshcup"
-}
-// 多选题
-{
-    "slug_name": "freshcup-multiple-choice",
-    "display_name": "Multiple-Choice",
-    "description": "Multiple Choice Problem powered by Freshcup",
-    "submission_channel_name": "freshcup-submission",
-    "self_test_channel_name": "freshcup-self-test",
-    "judge": "freshcup"
-}
-// 填空题
-{
-    "slug_name": "freshcup-short-answer",
-    "display_name": "Short-Answer",
-    "description": "Short Answer Problem powered by Freshcup",
-    "submission_channel_name": "freshcup-submission",
-    "self_test_channel_name": "freshcup-self-test",
-    "judge": "freshcup"
-}
-```
+| 题目类型 |        Slug Name         |  Display Name   |                 Description                 | Submission Channel Name | Self Test Channel Name |  Judge   |
+|:----:|:------------------------:|:---------------:|:-------------------------------------------:|:-----------------------:|:----------------------:|:--------:|
+| 单选题  |  freshcup-single-choice  |  Single-Choice  |  Single Choice Problem powered by Freshcup  |   freshcup-submission   |   freshcup-self-test   | freshcup |
+| 多选题  | freshcup-multiple-choice | Multiple-Choice | Multiple Choice Problem powered by Freshcup |   freshcup-submission   |   freshcup-self-test   | freshcup |
+| 简答题  |  freshcup-short-answer   |  Short-Answer   |  Short Answer Problem powered by Freshcup   |   freshcup-submission   |   freshcup-self-test   | freshcup |
 
 ## 代码结构
 
@@ -96,11 +66,8 @@ sastoj 通过 FreshCup 中间件提供了对 `单选题、多选题、简答题`
     "A": "选项A",
     "B": "选项B",
     "C": "选项C",
-    "D": "选项D",
-    ......
-    // 更多选项
+    "D": "选项D"
   },
   "size": "4"
-  // 选项数量
 }
 ```
