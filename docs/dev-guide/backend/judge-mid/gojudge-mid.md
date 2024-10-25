@@ -30,23 +30,27 @@ Go-judge 中间件是搭建了 sastoj 和 Go-judge 服务直接的桥梁，将 s
 │       ├── main.go
 │       ├── wire.go
 │       └── wire_gen.go
-└── internal
-    ├── biz
-    │   ├── biz.go
-    │   ├── gojudge.go
-    │   ├── gojudge_test.go
-    │   ├── loop.go
-    │   ├── middleware.go
-    │   ├── middleware_test.go
-    │   ├── simple.go
-    │   └── subtasks.go
-    ├── conf
-    │   ├── conf.pb.go
-    │   └── conf.proto
-    └── data
-        ├── data.go
-        ├── file.go
-        └── language.go
+├── internal
+│   ├── biz
+│   │   ├── biz.go
+│   │   └── submission.go
+│   ├── conf
+│   │   ├── conf.pb.go
+│   │   └── conf.proto
+│   ├── data
+│   │   ├── data.go
+│   │   └── submission.go
+│   ├── server
+│   │   ├── server.go
+│   │   └── submission.go
+│   └── service
+│       ├── service.go
+│       └── submission.go
+└── pkg
+    └── gojudge
+        ├── client.go
+        ├── command.go
+        └── state.go
 ```
 
 ## 配置文件结构
