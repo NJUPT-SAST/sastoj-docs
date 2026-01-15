@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "SASTOJ"
-  text: "Microservice Online Judge"
-  tagline: "A modern online judge for all future acmers"
+  text: "Online Judge System"
+  tagline: "A modern online judge for all future ACMers"
   actions:
     - theme: brand
       text: Get Started
