@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "SASTOJ"
   text: "在线评测系统"
-  tagline: "为未来的ACMer提供现代化的在线评测服务"
+  tagline: "为未来的 ACMers 提供现代化的在线评测服务"
   # image:
   #   src: "/image/favicons.svg"
   #   alt: "SASTOJ Logo"

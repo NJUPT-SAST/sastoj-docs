@@ -137,26 +137,27 @@ message ExecConfig{
 
 ## 语言支持
 
-Go-judge 中间件支持的语言 (编译器/编译优化) 有：
+Go-judge 中间件支持的语言 (编译器/运行器) 有：
 
-- C
-- C++
-- C++98
-- C++11
-- C++11(O2)
-- C++14
-- C++14(O2)
-- C++17
-- C++17(O2)
-- Bash
-- NodeJS
-- Java
-- Golang
-- PHP
-- Python3
-- Ruby
-
-已知问题：
-
-- Java 语言目前仅支持直接使用 `java` 完成编译和运行，不支持先使用 `javac` 编译，再使用 `java` 运行。
-- Pascel, Haskell, Rust 等语言无法正常获取输出，暂不支持。
+| 语言 | 编译器/运行器 | 优化参数 | 支持情况 |
+| :--- | :--- | :--- | :--- |
+| C | GCC | - | ✅ |
+| C++ | G++ | - | ✅ |
+| C++98 | G++ | -std=c++98 | ✅ |
+| C++11 | G++ | -std=c++11 | ✅ |
+| C++11(O2) | G++ | -std=c++11 -O2 | ✅ |
+| C++14 | G++ | -std=c++14 | ✅ |
+| C++14(O2) | G++ | -std=c++14 -O2 | ✅ |
+| C++17 | G++ | -std=c++17 | ✅ |
+| C++17(O2) | G++ | -std=c++17 -O2 | ✅ |
+| Bash | Bash | - | ✅ |
+| NodeJS | Node.js | - | ✅ |
+| Java | OpenJDK | - | ✅ |
+| Golang | Go | - | ✅ |
+| PHP | PHP | - | ✅ |
+| Python3 | Python 3 | - | ✅ |
+| Ruby | Ruby | - | ✅ |
+| Pascal | FPC | - | ✅ |
+| Haskell | GHC | - | ✅ |
+| Rust | Rustc | - | ✅ |
+| Wenyan | Wenyan | - | 仅测试 JS |
